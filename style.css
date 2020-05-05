@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {}
+
+.strona {}
+
+section {
+    padding-bottom: 40px;
+}
+
+.lost {
+    opacity: 0;
+    animation: loading 3s linear infinite alternate;
+}
+
+@keyframes loading {
+    to {
+        opacity: 1;
+    }
+}
+
+.menu {
+    background-color: black;
+    /*Opacity start*/
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    filter: alpha(opacity=80);
+    -moz-opacity: 0.80;
+    -khtml-opacity: 0.8;
+    opacity: 0.8;
+    /*Opacity end*/
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    padding: 0;
+    margin: 0;
+    text-align: right;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.3em;
+    line-height: 70px;
+}
+
+.menu .nazwa {
+    padding-right: 600px;
+}
+
+.menu ul li {
+    width: 120px;
+    margin-right: 40px;
+    display: inline;
+}
+
+.menu li {
+    text-align: center;
+    display: flex;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    word-spacing: 10px;
+}
+
+.menu a:hover {
+    color: #6190E8;
+}
+
+.header {
+    background-image: url(parallax2.jpg);
+}
+
+.tresc {
+    background-color: black;
+    color: white;
+}
+
+.retina {
+    font-size: 3rem;
+    background: -webkit-linear-gradient(#eee, #333);
+    -webkit-background-clip: text;
+    padding-top: 75px;
+    height: 100vh;
+    text-align: center;
+}
+
+.width {
+    height: 70vh;
+}
+
+.tresc h1,
+p {
+    margin-left: 200px;
+    margin-right: 200px;
+    padding-top: 40px;
+}
+
+.stopka {
+    background-color: black;
+}
+
+.stopka a {
+    text-decoration: none;
+    color: beige;
+}
+
+#centruj {
+    text-align: center;
+}
+
+
+#parallax1 {
+    height: 100vh;
+    width: 100%;
+    background-image: url(parallax1.jpg);
+    background-size: cover;
+    display: table;
+    background-attachment: fixed;
+}
+
+#parallax2 {
+    height: 100vh;
+    width: 100%;
+    background-image: url(parallax2.jpg);
+    background-size: cover;
+    display: table;
+    background-attachment: fixed;
+}
+
+#parallax3 {
+    height: 100vh;
+    width: 100%;
+    background-image: url(parallax3.jpg);
+    background-size: cover;
+    display: table;
+    background-attachment: fixed;
+}
+
+#parallax1 h1 {
+    text-align: center;
+    padding-top: 280px;
+    font-size: 10rem;
+    color: white;
+}
+
+
+.clipped-title1 {
+    background: url(gradient.jpg) no-repeat center center;
+    background-size: cover;
+    color: #fff;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-transition: all 2s cubic-bezier(0.42, 0, 0.58, 1);
+    -moz-transition: all 2s cubic-bezier(0.42, 0, 0.58, 1);
+    -o-transition: all 2s cubic-bezier(0.42, 0, 0.58, 1);
+    transition: all 2s cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+.clipped-title1 p {
+    font-size: 200px;
+    font-family: Anton, sans-serif;
+    text-align: center;
+    -webkit-transition: text-shadow 1s ease;
+    text-shadow: 0 0 1px rgba(0, 0, 0, .1);
+    margin: 0;
+    padding: 0;
+}
